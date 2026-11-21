@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f1;
+    color: #263d30;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 7%;
+    background: white;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: bold;
+    color: #244b38;
+    text-decoration: none;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #244b38;
+}
+
+.destination-hero {
+    padding: 85px 20px;
+    text-align: center;
+    background: #294d39;
+    color: white;
+}
+
+.destination-hero .eyebrow {
+    color: #d6b77e;
+}
+
+.destination-hero h1 {
+    font-size: clamp(32px,5vw,48px);
+    margin: 18px 0;
+}
+
+.content-section {
+    max-width: 1000px;
+    margin: 45px auto;
+    padding: 0 20px;
+}
+
+.photo-section img {
+    display: block;
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 15px;
+    background: #dce5dc;
+}
+
+.details-card {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    margin-top: 25px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.04);
+}
+
+.eyebrow {
+    color: #a17b42;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.details-card h2 {
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+.details-card p:not(.eyebrow) {
+    line-height: 1.9;
+    color: #626c64;
+}
+
+video {
+    display: block;
+    width: 100%;
+    max-height: 480px;
+    margin-top: 20px;
+    border-radius: 12px;
+    background: #111;
+}
+
+.notice {
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+.action-button {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 14px 22px;
+    background: #244b38;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.action-button:hover {
+    background: #a17b42;
+}
+
+.emergency-card {
+    border-left: 5px solid #b64b42;
+}
+
+footer {
+    background: #244b38;
+    padding: 30px;
+    color: white;
+    text-align: center;
+    line-height: 2;
+}
+
+@media(max-width:600px) {
+    .navbar {
+        padding: 18px 5%;
+    }
+
+    .photo-section img {
+        height: 250px;
+    }
+
+    .details-card {
+        padding: 22px;
+    }
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Gadag | Online Tourist Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a class="logo" href="index.html">EXPLORE GADAG</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#about">About</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <span class="eyebrow">THE HERITAGE OF NORTH KARNATAKA</span>
+        <h1>Discover the Timeless Beauty of Gadag</h1>
+        <p>
+            Explore ancient temples, historical landmarks,
+            cultural heritage and natural beauty.
+        </p>
+
+        <div class="search-box">
+            <select id="destinationSelect">
+                <option value="">Select a destination</option>
+                <option value="veeranarayana">Veeranarayana Temple</option>
+                <option value="trikuteshwara">Trikuteshwara Temple</option>
+                <option value="lakkundi">Lakkundi</option>
+                <option value="dambal">Dambal</option>
+                <option value="magadi">Magadi Bird Sanctuary</option>
+                <option value="bhishma">Bhishma Lake – Basaveshwara Statue</option>
+            </select>
+            <button id="exploreBtn">Explore Now →</button>
+        </div>
+        <p id="selectionMessage"></p>
+    </div>
+</section>
+
+<section class="intro" id="about">
+    <span class="eyebrow">ABOUT OUR REGION</span>
+    <h2>Welcome to Gadag</h2>
+    <p>
+        Gadag is a region rich in historical architecture,
+        religious heritage, cultural traditions and natural
+        attractions. Our tourist guide brings selected
+        destinations together in one convenient platform.
+    </p>
+</section>
+
+<section class="destinations" id="destinations">
+    <span class="eyebrow">EXPLORE THE DISTRICT</span>
+    <h2>Discover Our Destinations</h2>
+    <p class="section-description">
+        Choose a destination to explore its history,
+        photographs, videos and visitor information.
+    </p>
+
+    <div class="destination-grid">
+
+        <article class="destination-card">
+            <img src="images/veeranarayana.jpg" alt="Veeranarayana Temple">
+            <div>
+                <h3>Veeranarayana Temple</h3>
+                <button onclick="openDestination('veeranarayana')">Explore →</button>
+            </div>
+        </article>
+
+        <article class="destination-card">
+            <img src="images/trikuteshwara.jpg" alt="Trikuteshwara Temple">
+            <div>
+                <h3>Trikuteshwara Temple</h3>
+                <button onclick="openDestination('trikuteshwara')">Explore →</button>
+            </div>
+        </article>
+
+        <article class="destination-card">
+            <img src="images/lakkundi.jpg" alt="Lakkundi">
+            <div>
+                <h3>Lakkundi</h3>
+                <button onclick="openDestination('lakkundi')">Explore →</button>
+            </div>
+        </article>
+
+        <article class="destination-card">
+            <img src="images/dambal.jpg" alt="Dambal">
+            <div>
+                <h3>Dambal</h3>
+                <button onclick="openDestination('dambal')">Explore →</button>
+            </div>
+        </article>
+
+        <article class="destination-card">
+            <img src="images/magadi.jpg" alt="Magadi Bird Sanctuary">
+            <div>
+                <h3>Magadi Bird Sanctuary</h3>
+                <button onclick="openDestination('magadi')">Explore →</button>
+            </div>
+        </article>
+
+        <article class="destination-card">
+            <img src="images/bhishma.jpg" alt="Bhishma Lake">
+            <div>
+                <h3>Bhishma Lake</h3>
+                <button onclick="openDestination('bhishma')">Explore →</button>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<footer>
+    <h3>Explore Gadag</h3>
+    <p>Discover. Experience. Explore.</p>
+    <p>© 2026 Explore Gadag | Online Tourist Guide</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

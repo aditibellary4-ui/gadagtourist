@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination | Explore Gadag</title>
+    <link rel="stylesheet" href="destination.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">EXPLORE GADAG</a>
+    <a href="index.html" class="back-link">← Back to Home</a>
+</header>
+
+<section class="destination-hero">
+    <span class="eyebrow">EXPLORE GADAG DISTRICT</span>
+    <h1 id="placeName"></h1>
+    <p id="placeLocation"></p>
+</section>
+
+<main class="content-section">
+
+    <section class="photo-section">
+        <img id="placeImage" src="" alt="Destination photograph">
+    </section>
+
+    <section class="details-card">
+        <span class="eyebrow">DISCOVER ITS HISTORY</span>
+        <h2>About This Destination</h2>
+        <p id="placeDescription"></p>
+    </section>
+
+    <section class="details-card">
+        <span class="eyebrow">WATCH AND EXPLORE</span>
+        <h2>Destination Video</h2>
+        <video id="placeVideo" controls preload="metadata">
+            <source id="videoSource" src="" type="video/mp4">
+            Your browser does not support video playback.
+        </video>
+        <p id="videoMessage" class="notice"></p>
+    </section>
+
+    <section class="details-card">
+        <span class="eyebrow">FOOD AND DINING</span>
+        <h2>Nearby Places to Eat</h2>
+        <p id="foodDescription"></p>
+        <a id="foodLink" class="action-button"
+           target="_blank" rel="noopener noreferrer">
+            Find Restaurants on Google Maps ↗
+        </a>
+    </section>
+
+    <section class="details-card emergency-card">
+        <span class="eyebrow">EMERGENCY INFORMATION</span>
+        <h2>Nearby Hospitals</h2>
+        <p id="hospitalDescription"></p>
+        <a id="hospitalLink" class="action-button"
+           target="_blank" rel="noopener noreferrer">
+            Find Hospitals on Google Maps ↗
+        </a>
+        <p class="notice">
+            For emergencies in India, call 112.
+            Confirm the hospital's emergency services and availability directly.
+        </p>
+    </section>
+
+    <section class="details-card">
+        <span class="eyebrow">LOCATION AND DIRECTIONS</span>
+        <h2>Find This Destination</h2>
+        <p id="locationText"></p>
+        <a id="mapLink" class="action-button"
+           target="_blank" rel="noopener noreferrer">
+            Open Destination in Google Maps ↗
+        </a>
+    </section>
+
+</main>
+
+<footer>
+    <h3>Explore Gadag</h3>
+    <p>Discover. Experience. Explore.</p>
+    <p>© 2026 Explore Gadag | Online Tourist Guide</p>
+</footer>
+
+<script src="destination.js"></script>
+</body>
+</html>
